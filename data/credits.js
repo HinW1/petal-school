@@ -1238,5 +1238,21 @@ window.CREDITS = [
   "author": "Heather Newsom",
   "license": "Unsplash License",
   "source": "https://unsplash.com/photos/two-spools-of-velvet-ribbon-red-and-green-zhSf4U5Aieg"
+ },
+ {
+  "id": "tools/thorn-stripper",
+  "file": "img/tools/thorn-stripper.jpg",
+  "title": "去刺器",
+  "author": "用戶提供",
+  "license": "用戶提供",
+  "source": ""
+ },
+ {
+  "id": "tools/flower-food",
+  "file": "img/tools/flower-food.jpg",
+  "title": "切花保鮮液",
+  "author": "用戶提供",
+  "license": "用戶提供",
+  "source": ""
  }
 ];

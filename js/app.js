@@ -248,7 +248,7 @@ function more(){
   <section class="sec"><h3>送俾客人嘅保養卡</h3><div class="keys">${window.CARE_CARD.map(richItem).join("")}</div></section>
   <section class="sec"><h3>術語表</h3><dl class="gloss">${window.GLOSSARY.map(g=>`<dt>${g[0]}<span class="en">（${g[1]}）</span></dt><dd>${esc(g[2])}</dd>`).join("")}</dl></section>
   <section class="sec"><h3>外觀</h3><div class="list"><button id="theme"><span>深淺色</span><small>${({auto:"跟系統",light:"淺色",dark:"深色"})[localTheme()]}</small></button><button id="reset"><span>重設所有進度</span><small style="color:var(--bad)">清除</small></button></div></section>
-  <section class="sec"><h3>相片來源</h3><div class="credits">${CR.length?`相片來自 Wikimedia Commons 同 Openverse，按各自授權使用：${CR.map(c=>`<div>${esc(creditName(c.id))}：${esc(c.author)} · ${esc(c.license)} · <a href="${esc(c.source)}" target="_blank" rel="noopener">來源</a></div>`).join("")}`:"相片準備中。"}影片版權屬各 YouTube 頻道。</div></section>`;
+  <section class="sec"><h3>相片來源</h3><div class="credits">${CR.length?`相片來自 Wikimedia Commons、Openverse 同 Unsplash，按各自授權使用：${CR.map(c=>`<div>${esc(creditName(c.id))}：${c.author===c.license?esc(c.author):`${esc(c.author)} · ${esc(c.license)}`}${c.source?` · <a href="${esc(c.source)}" target="_blank" rel="noopener">來源</a>`:""}</div>`).join("")}`:"相片準備中。"}影片版權屬各 YouTube 頻道。</div></section>`;
   app.innerHTML = h;
   bindTerms(app);
   $("#theme").onclick=()=>{ const order=["auto","light","dark"]; setTheme(order[(order.indexOf(localTheme())+1)%3]); more(); };

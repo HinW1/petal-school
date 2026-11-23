@@ -1,5 +1,5 @@
 // 離線快取：同網域檔案 cache-first；影片（YouTube）同字型照常上網
-const VERSION = "flora-v4";
+const VERSION = "flora-v5";
 const SHELL = ["./","index.html","css/app.css","js/app.js","js/art.js","data/flowers.js","data/course.js","data/wraps.js","data/videos.js","data/credits.js","data/images.js","manifest.webmanifest","img/icons/icon-180.png","img/icons/icon-192.png","img/icons/icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(async c => {
