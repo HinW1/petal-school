@@ -1,11 +1,11 @@
 // 離線快取：同網域檔案 cache-first；影片（YouTube）同字型照常上網
-const VERSION = "flora-v2";
+const VERSION = "flora-v3";
 const SHELL = ["./","index.html","css/app.css","js/app.js","js/art.js","data/flowers.js","data/course.js","data/wraps.js","data/videos.js","data/credits.js","data/images.js","manifest.webmanifest","img/icons/icon-180.png","img/icons/icon-192.png","img/icons/icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(async c => {
     await c.addAll(SHELL);
     // 預載所有花材、工具相（列表由 data/images.json 提供）
-    try { const list = await (await fetch("data/images.json")).json(); await c.addAll(list); } catch(err) {}
+    try { const list = await (await fetch("data/images.json")).json(); await Promise.allSettled(list.map(u => c.add(u))); } catch(err) {}
   }).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
