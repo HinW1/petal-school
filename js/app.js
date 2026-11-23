@@ -27,7 +27,7 @@ const IM = window.IMGS || {};
 const has = (dir, id) => (IM[dir] || []).includes(id);
 // 花材：有去背版就用去背（Cut-out），冇就用原相
 const fSrc = id => has("flowers-cut", id) ? { src:`img/flowers-cut/${id}.webp`, cut:true } : { src:`img/flowers/${id}.jpg`, cut:false };
-const tSrc = id => id==="wrapping-paper" ? { src:"img/wraps/matte.jpg", cut:false } : has("tools-cut", id) ? { src:`img/tools-cut/${id}.webp`, cut:true } : has("tools", id) ? { src:`img/tools/${id}.jpg`, cut:false } : null;
+const tSrc = id => has("tools-cut", id) ? { src:`img/tools-cut/${id}.webp`, cut:true } : has("tools", id) ? { src:`img/tools/${id}.jpg`, cut:false } : null;
 const rSrc = r => r.tool ? tSrc(r.id) : has("ribbons-cut", r.id) ? { src:`img/ribbons-cut/${r.id}.webp`, cut:true } : has("ribbons", r.id) ? { src:`img/ribbons/${r.id}.jpg`, cut:false } : null;
 const imgF = (id, cls="") => { const p = fSrc(id); return `<img class="${cls} ${p.cut?"cut":""}" src="${p.src}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'noimg',innerHTML:window.drawArt('ph')}))">`; };
 const imgT = id => { const p = tSrc(id); if (!p) return ""; return `<img class="${p.cut?"cut":""}" src="${p.src}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`; };

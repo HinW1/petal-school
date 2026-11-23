@@ -440,12 +440,12 @@ window.CREDITS = [
   "source": "https://commons.wikimedia.org/wiki/File:Dew-covered_tulip_(Unsplash).jpg"
  },
  {
-  "id": "wrapping-paper",
+  "id": "tools/wrapping-paper",
   "file": "img/tools/wrapping-paper.jpg",
-  "title": "File:Gift wrapping in a jewellery shop 6.jpg",
-  "author": "W.carter",
-  "license": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File:Gift_wrapping_in_a_jewellery_shop_6.jpg"
+  "title": "Rolls of matte cream and black paper",
+  "author": "Amy Vann",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/a-close-up-of-some-rolls-of-toilet-paper-EqdvCxYRsfY"
  },
  {
   "id": "flower-basket",
@@ -858,10 +858,10 @@ window.CREDITS = [
  {
   "id": "lessons/single-stem",
   "file": "img/lessons/single-stem.jpg",
-  "title": "Single red rose against soft background",
-  "author": "Horia Varlan",
-  "license": "CC BY 2.0",
-  "source": "https://www.flickr.com/photos/10361931@N06/4324993458"
+  "title": "A single rose wrapped in tissue and kraft paper",
+  "author": "Madeline Liu",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/a-single-rose-is-wrapped-in-brown-paper-_EDOrLb1Iwk"
  },
  {
   "id": "lessons/sourcing",
@@ -970,10 +970,10 @@ window.CREDITS = [
  {
   "id": "tools/hat-box",
   "file": "img/tools/hat-box.jpg",
-  "title": "Flower box Nicolai Bergmann",
-  "author": "Hanabishi",
-  "license": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File:Flower_box_Nicolai_Bergmann.jpg"
+  "title": "Garden roses and ranunculus in a round hat box",
+  "author": "Vika Fleysher",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/pink-and-white-roses-bouquet-HbBsRIBVdug"
  },
  {
   "id": "tools/spray-bottle",
@@ -1190,5 +1190,53 @@ window.CREDITS = [
   "author": "Robert Flogaus-Faust",
   "license": "CC BY 4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Veronica_spicata_RF.jpg"
+ },
+ {
+  "id": "lessons/organza-wrap",
+  "file": "img/lessons/organza-wrap.jpg",
+  "title": "White roses in a sheer frosted bouquet wrap",
+  "author": "Christine Zhang",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/a-woman-holding-a-bouquet-of-flowers-in-her-hand-nyFntt7_KIg"
+ },
+ {
+  "id": "tools/water-tube",
+  "file": "img/tools/water-tube.jpg",
+  "title": "Orchid in a capped water vial",
+  "author": "Teslariu Mihai",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/a-white-flower-in-a-glass-vase-on-a-blue-background-IimM3rGhBZc"
+ },
+ {
+  "id": "wraps/tissue",
+  "file": "img/wraps/tissue.jpg",
+  "title": "Pastel tissue paper sheets",
+  "author": "E N",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/a-white-tissue-paper-on-a-purple-blanket-hDtjXwMl1-c"
+ },
+ {
+  "id": "wraps/mesh",
+  "file": "img/wraps/mesh.jpg",
+  "title": "Pink roses and baby's breath in a white mesh wrap",
+  "author": "Marina Abrosimova",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/pink-and-white-roses-bouquet-vy4-90izWmQ"
+ },
+ {
+  "id": "ribbons/linen",
+  "file": "img/ribbons/linen.jpg",
+  "title": "Frayed natural cotton ribbon on a wooden spool",
+  "author": "Lina Verovaya",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/white-and-brown-wooden-stick-on-white-textile-aUTeRI3W698"
+ },
+ {
+  "id": "ribbons/velvet",
+  "file": "img/ribbons/velvet.jpg",
+  "title": "Frayed velvet ribbons on wooden spools",
+  "author": "Heather Newsom",
+  "license": "Unsplash License",
+  "source": "https://unsplash.com/photos/two-spools-of-velvet-ribbon-red-and-green-zhSf4U5Aieg"
  }
 ];
